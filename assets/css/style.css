@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+  main aside {
+    align-self: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+
+  main aside {
+    align-self: stretch;
+  }
+  header .navbar ul {
+    flex-direction: column;
+    flex-wrap: wrap;
+    column-gap: 0.5rem;
+  }
+  .side-item {
+    flex-wrap: wrap;
+  }
+}
+
+#content {
+  flex: 5;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  gap: 1.5rem;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h2,
+h3 {
+  color: #379237;
+}
+
+.jumbotron {
+  font-size: 20px;
+  padding: 60px;
+  background-color: #54b435;
+  text-align: center;
+  color: white;
+}
+
+nav {
+  background-color: #379237;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+}
+
+nav li {
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
+}
+
+header .navbar li a {
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  padding: 21px 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+nav li:hover a {
+  background-color: #266426;
+  color: white;
+}
+
+nav ul {
+  padding-inline: 4rem;
+  display: flex;
+  gap: 1rem;
+}
+
+#body-bg {
+  background-attachment: fixed;
+  background-image: url("../img/bg.jpg");
+  background-origin: padding-box;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  position: relative;
+}
+
+.card {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.card p {
+  text-align: justify;
+}
+
+.card .info {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.side-item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.side-item img {
+  height: 520px;
+  margin-left: 40px;
+}
+
+.paragragh {
+  padding: 0 40px 0 40px;
+}
+
+.featured-image {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.featured-image .card img {
+  height: 170px;
+}
+
+.profile img {
+  width: 200px;
+}
+
+.profile header {
+  text-align: center;
+}
+
+header {
+  display: inline;
+}
+
+aside {
+  flex: 1;
+}
+
+footer {
+  padding: 15px;
+  color: white;
+  background-color: #379237;
+}
